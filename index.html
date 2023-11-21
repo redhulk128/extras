@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Web XP Xtras</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Web XP Xtras</h1>
+    </header>
+
+    <div class="difficulty-buttons">
+        <a href="./alarm/index.html" style="text-decoration: none;"><button class="button easy"><img
+                    src="./alarm/alarm.icon" height="25px" alt="Alarm"
+                    style="width: 25px; margin-right: 15px;margin-bottom: 3px;"><b>Alarm</b></button></a>
+        <a href="./clock/index.html" style="text-decoration: none;"><button class="button medium"><img
+                    src="./clock/Clock.png" height="25px" alt="Clock"
+                    style="width: 25px; margin-right: 15px; margin-bottom: 3px;"><b>Clock</b></button></a>
+        <a href="./calendar/index.html" style="text-decoration: none;"><button class="button hard"><img
+                    src="./calendar/icon.ico" height="25px" alt="Calender"
+                    style="width: 25px; margin-right: 15px; margin-bottom: 3px;"><b>Calendar</b></button></a>
+        <a href="./stopwatch/index.html" style="text-decoration: none;"><button class="button impossible"><img
+                    src="./stopwatch/stopwatch.png" height="25px" alt="Stop-Watch"
+                    style="width: 25px; margin-right: 10px; margin-bottom: 3px;"><b>Stop Watch</b></button></a>
+        <a href="./weather/index.html" style="text-decoration: none;"><button class="button freecell"><img
+                    src="./weather/wather.webp" alt="Weather" height="30px"
+                    style="width: 30px; margin-right: 10px; margin-bottom: 3px;"><b>Weather</b></button></a>
+    </div>
+    <script>
+        // Function to block the right-click context menu
+        function blockContextMenu(event) {
+            event.preventDefault();
+        }
+
+        // Attach the blockContextMenu function to the contextmenu event
+        window.addEventListener("contextmenu", blockContextMenu);
+    </script>
+    <footer>
+        <p class="copyright-notice" style="color: black;">&copy; a <a href="https://redhulk.in" target="_blank"
+                style="text-decoration: none;"> <span style="color: red;">red</span><span
+                    style="color: rgb(0, 157, 0);">hulk</span>.in</a> product.</p>
+    </footer>
+</body>
+
+</html>
